@@ -1,0 +1,54 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url("sansation_light.woff");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: url("assets/background.png");
+  background-size: 100% 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar-nav {
+  width: 50%;
+  justify-content: space-between;
+  font-weight: 100;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 35px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar .navbar-nav .nav-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #ffffff;
+  color: transparent;
+  width: 0;
+  content: '.';
+  height: 3px;
+}
+
+.navbar .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.aligned-icons {
+  font-size: 35px !important;
+  vertical-align: middle;
+}
