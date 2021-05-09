@@ -21,25 +21,25 @@
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
               <span class="material-icons nav-icons">home</span>
-              Home
+              HOME
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">
               <span class="material-icons nav-icons">people</span>
-              About
+              ABOUT
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">
               <span class="iconify nav-icons" data-icon="mdi-rocket-launch" data-inline="false"></span>
-              Mission
+              MISSION
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
               <span class="material-icons nav-icons">call</span>
-              Contact
+              CONTACT
             </a>
           </li>
         </ul>
@@ -57,7 +57,17 @@
           <p>MISSION CONTENT</p>
         </div>
         <div id="contact" class="tab-pane fade test">
-          <p>CONTACT CONTENT</p>
+          <form action="TODO.php">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
         </div>
       </div>
     </div>
