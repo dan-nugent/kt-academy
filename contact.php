@@ -6,10 +6,11 @@ if(!empty($_POST["submit"])) {
 	$subject = $_POST["subject"];
 	$message = $_POST["message"];
 	$recipient = "dan--nugent@live.co.uk";
-	$mailHeaders = "From: " . $firstName . "<". $sender .">\r\n";
+	$mailHeaders = "From: " . $firstName . " ".  $lastName . "<". $sender .">\r\n";
 	if(mail($recipient, $subject, $message, $mailHeaders)) {
-	    $test = "Your contact information is received successfully.";
-	    $type = "success";
+	    echo "Thank you for your enquiry. We will aim to get back to you as soon as possible.";
+	}else{
+		echo "Oops something went wrong!";
 	}
 }
 ?>
