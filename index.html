@@ -12,33 +12,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="collapse navbar-collapse" id="navbarNav">
+        <img id="logo" src="assets/logo2.png">
         <ul class="navbar-nav nav-tabs">
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
-              <img id="logo" src="assets/logo2.png">
+              <span class="material-icons nav-icons">home</span>
+              Home
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">
               <span class="material-icons nav-icons">people</span>
-              About us
+              About
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">
-              <span class="iconify nav-icons" data-icon="mdi-rocket-launch" data-inline="false"></span>
-              Mission
+            <a class="nav-link" data-toggle="tab" href="#workshops" role="tab" aria-controls="workshops" aria-selected="false">
+              <span class="material-icons nav-icons">handyman</span>
+              Workshops
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
-              <span class="material-icons nav-icons">contact_support</span>
-              Contact
+            <a class="nav-link" data-toggle="tab" href="#services" role="tab" aria-controls="services" aria-selected="false">
+              <span class="material-icons nav-icons">add</span>
+              Additional Services
             </a>
           </li>
         </ul>
@@ -60,36 +63,56 @@
     </nav>
     <div class="content-container">
       <div class="tab-content">
-        <div id="home" class="tab-pane fade active test">
-          <div style="height: 300px; background-color: red;"></div>
+        <div id="home" role="tabpanel" class="tab-pane in fade active">
+          <div class="home-bg">
+            <h2 class="home-text">
+              We understand that with every client the importance is to meet their needs, this will be established with bespoke workshops designed and delivered for the delivery service client.
+            </p>
+          </div>
         </div>
         <div id="about" class="tab-pane fade test">
           <p>ABOUT CONTENT</p>
         </div>
-        <div id="mission" class="tab-pane fade test">
-          <p>MISSION CONTENT</p>
+        <div id="workshops" class="tab-pane fade test">
+          <p>WORKSHOPS CONTENT</p>
         </div>
-        <div id="contact" class="tab-pane fade test">
-          <form action="contact.php" method="post">
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="firstname">
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lastname">
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email">
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" style="height:200px"></textarea>
-            <input type="submit" value="Submit" name="submit">
-          </form>
+        <div id="services" class="tab-pane fade test">
+          <p>ADDITIONAL SERVICES CONTENT</p>
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-      $(".nav-tabs li.nav-item a.nav-link").click(function () {
-        $(".nav-tabs li.nav-item a.nav-link").removeClass('active');
-      });
-    </script>
+    <div class="footer">
+      <div class="footer-content">
+        <h2 class="mission-title">Mission</h2>
+        <p class="mission-content">
+          To design and deliver appropriate bespoke training workshops for our clients to ensure quality standards are achieved throughout the delivery service journey for their customers in 2 man delivery logistics.
+        </p>
+      </div>
+      <div class="footer-end">
+        <ul class="social-media">
+          <li class="social-media-item">
+            <a href="https://www.facebook.com/roy.baxendell">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="https://www.instagram.com/baxy2019/">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="https://www.linkedin.com/in/roy-baxendell-4398b628/">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <script type="text/javascript"> $(".nav-tabs li.nav-item a.nav-link").click(function () { $(".nav-tabs li.nav-item a.nav-link").removeClass('active'); }); </script> -->
   </body>
 </html>
