@@ -13,15 +13,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="collapse navbar-collapse" id="navbarNav">
-        <img id="logo" src="assets/logo2.png">
+        <img id="logo" src="assets/logo.png">
         <ul class="navbar-nav nav-tabs">
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+            <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
               <span class="material-icons nav-icons">home</span>
               Home
             </a>
@@ -50,7 +52,7 @@
         <li class="contact-item">
           <a href="#">
             <span class="material-icons contact-icons">call</span>
-            07432315903
+            <a href="tel:+07933232015">07933232015</a>
           </a>
         </li>
         <li class="contact-item">
@@ -63,56 +65,70 @@
     </nav>
     <div class="content-container">
       <div class="tab-content">
-        <div id="home" role="tabpanel" class="tab-pane in fade active">
+        <div id="home" role="tabpanel" class="tab-pane active">
           <div class="home-bg">
-            <h2 class="home-text">
-              We understand that with every client the importance is to meet their needs, this will be established with bespoke workshops designed and delivered for the delivery service client.
-            </p>
+            <div style="padding: 250px 0 0 285px">
+              <h2 class="home-text">
+                We understand that with every client the importance is to meet their needs, this will be established with bespoke workshops designed and delivered for the delivery service client.
+              </h2>
+            </div>
           </div>
         </div>
-        <div id="about" class="tab-pane fade test">
+        <div id="about" class="tab-pane">
           <p>ABOUT CONTENT</p>
         </div>
-        <div id="workshops" class="tab-pane fade test">
+        <div id="workshops" class="tab-pane">
           <p>WORKSHOPS CONTENT</p>
         </div>
-        <div id="services" class="tab-pane fade test">
-          <p>ADDITIONAL SERVICES CONTENT</p>
+        <div id="services" class="tab-pane">
+          <div class="additional-services-bg">
+            <div class="additional-services-item-container">
+              <img src="assets/consultancy.png" class="additional-services-images"/>
+              <p class="additional-services-item">
+                Knowledge Training Academy can work with the clients to offer a bespoke consultancy service
+              </p>
+            </div>
+            <div class="additional-services-item-container">
+              <img src="assets/desktop-publishing.jpg" class="additional-services-images"/>
+              <p class="additional-services-item">
+                Ability to work with clients to produce professional desktop publications for their business.
+              </p>
+            </div>
+            <div class="additional-services-item-container">
+              <img src="assets/auditing.jfif" class="additional-services-images"/>
+              <p class="additional-services-item">
+                Entering the wet connection arena for any logistics company there are standards that should be met. Knowledge Training Academy will audit each drivers work ensuring what is learnt in the classroom is transferred into the customers home.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer">
-      <div class="footer-content">
-        <h2 class="mission-title">Mission</h2>
-        <p class="mission-content">
-          To design and deliver appropriate bespoke training workshops for our clients to ensure quality standards are achieved throughout the delivery service journey for their customers in 2 man delivery logistics.
-        </p>
+      <div class="footer">
+        <div class="footer-content">
+          <h2 class="mission-title">Mission</h2>
+          <p class="mission-content">
+            To design and deliver bespoke training workshops for our clients to ensure quality standards are achieved throughout the journey for their customers in 2 man delivery services.
+          </p>
+        </div>
+        <div class="footer-end">
+          <ul class="social-media">
+            <li class="social-media-item">
+              <a href="https://www.facebook.com/roy.baxendell">
+                <i class="fa fa-facebook-official"></i>
+              </a>
+            </li>
+            <li class="social-media-item">
+              <a href="https://www.linkedin.com/in/roy-baxendell-4398b628/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-end">
-        <ul class="social-media">
-          <li class="social-media-item">
-            <a href="https://www.facebook.com/roy.baxendell">
-              <i class="fa fa-facebook-official"></i>
-            </a>
-          </li>
-          <li class="social-media-item">
-            <a href="#">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="social-media-item">
-            <a href="https://www.instagram.com/baxy2019/">
-              <i class="fa fa-instagram"></i>
-            </a>
-          </li>
-          <li class="social-media-item">
-            <a href="https://www.linkedin.com/in/roy-baxendell-4398b628/">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- <script type="text/javascript"> $(".nav-tabs li.nav-item a.nav-link").click(function () { $(".nav-tabs li.nav-item a.nav-link").removeClass('active'); }); </script> -->
-  </body>
-</html>
+      <script type="text/javascript">
+        $(".nav-tabs li.nav-item a.nav-link").click(function () {
+          $(".nav-tabs li.nav-item a.nav-link").removeClass('active');
+        });
+      </script>
+    </body>
+  </html>
