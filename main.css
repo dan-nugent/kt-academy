@@ -30,7 +30,7 @@ body {
   position: relative;
 }
 
-.nav-item {
+.nav-item:not(.workshop-item) {
   align-self: center;
   padding-right: 100px;
 }
@@ -122,6 +122,13 @@ body {
   height: 100%;
 }
 
+.workshops-bg {
+  background-image: url("assets/workshops-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
 .about-container {
   display: flex;
   align-items: center;
@@ -138,6 +145,7 @@ body {
 .about-container p {
   margin-bottom: 50px;
   font-size: 30px;
+  font-weight: 600;
   color: #ffffff;
 }
 
@@ -146,6 +154,68 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+}
+
+.manual-handling-bg {
+  background-image: url("assets/manual-handling-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.axml-bg {
+  background-image: url("assets/axml-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.workshop-bg {
+  height: 75%;
+}
+
+.workshop-title {
+  color: #ffffff;
+  background-color: #194776;
+  width: fit-content;
+  padding: 0 10px;
+}
+
+.workshop-content-container {
+  color: #ffffff;
+  padding: 50px;
+  display: flex;
+  gap: 100px;
+  font-size: 40px;
+  font-weight: 600;
+  align-items: center;
+  max-width: 2000px;
+}
+
+.workshop-images {
+  display: block;
+  height: 250px;
+  width: auto;
+  padding-bottom: 25px;
+}
+
+.workshop-about-paragraph {
+  margin-bottom: 50px;
+  background-color: #194776;
+  padding: 10px;
+}
+
+.workshop-info-container {
+  display: flex;
+  gap: 100px;
+  border-bottom: 1px solid #000000;
+  margin: 25px 100px;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  height: 22%;
+}
+
+.workshop-info-item p {
+  max-width: 500px;
 }
 
 .additional-services-images {
@@ -166,11 +236,34 @@ body {
   font-size: 30px;
 }
 
+.workshop-menu {
+  list-style: none;
+  margin: auto;
+  width: fit-content;
+  padding-top: 275px;
+}
+
+.workshop-item {
+  width: 400px;
+  height: auto;
+  border-radius: 50px;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px !important;
+  background-color: #f5c400;
+  box-shadow: 5px 10px;
+  cursor: pointer;
+}
+
+.workshop-item a {
+  color: #194776;
+}
+
 .home-text {
   width: 38%;
   line-height: 50px;
   color: #194776;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 40px;
 }
 
