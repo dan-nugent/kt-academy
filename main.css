@@ -7,21 +7,23 @@ body {
   color: #194776;
   font-size: 25px;
   font-family: Montserrat;
+  overflow-y: hidden;
 }
 
 #logo {
-  height: 100%;
+  height: 75px;
   width: auto;
 }
 
 .navbar {
   background-color: #194776;
-  height: 10%;
+  height: 10vh;
 }
 
 .navbar-nav {
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
+  margin-left: 25px;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -32,7 +34,6 @@ body {
 
 .nav-item:not(.workshop-item) {
   align-self: center;
-  padding-right: 100px;
 }
 
 .navbar .navbar-nav .nav-link::after {
@@ -97,7 +98,7 @@ body {
 }
 
 .content-container {
-  height: 70%;
+  height: 70vh;
 }
 
 .tab-content {
@@ -138,13 +139,12 @@ body {
 }
 
 .roy-image {
-  height: 750px;
+  height: 50vh;
   width: auto;
 }
 
 .about-container p {
-  margin-bottom: 50px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   color: #ffffff;
 }
@@ -169,7 +169,7 @@ body {
 }
 
 .workshop-bg {
-  height: 75%;
+  height: 50vh;
 }
 
 .workshop-title {
@@ -181,13 +181,12 @@ body {
 
 .workshop-content-container {
   color: #ffffff;
-  padding: 50px;
+  padding: 0 50px;
   display: flex;
   gap: 100px;
   font-size: 40px;
   font-weight: 600;
   align-items: center;
-  max-width: 2000px;
 }
 
 .workshop-images {
@@ -198,7 +197,6 @@ body {
 }
 
 .workshop-about-paragraph {
-  margin-bottom: 50px;
   background-color: #194776;
   padding: 10px;
 }
@@ -207,11 +205,10 @@ body {
   display: flex;
   gap: 100px;
   border-bottom: 1px solid #000000;
-  margin: 25px 100px;
   font-size: 16px;
   justify-content: center;
   align-items: center;
-  height: 22%;
+  height: 20vh;
 }
 
 .workshop-info-item p {
@@ -219,8 +216,8 @@ body {
 }
 
 .additional-services-images {
-  height: 250px;
-  width: 300px;
+  height: 15vh;
+  width: 10vw;
   margin-left: 25px;
 }
 
@@ -240,16 +237,15 @@ body {
   list-style: none;
   margin: auto;
   width: fit-content;
-  padding-top: 275px;
+  padding-top: 200px;
 }
 
 .workshop-item {
-  width: 400px;
   height: auto;
   border-radius: 50px;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
-  margin-bottom: 50px !important;
+  margin-bottom: 30px !important;
   background-color: #f5c400;
   box-shadow: 5px 10px;
   cursor: pointer;
@@ -259,47 +255,48 @@ body {
   color: #194776;
 }
 
+.home-text-container {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  margin-left: 100px;
+}
+
 .home-text {
-  width: 38%;
+  width: 40vw;
   line-height: 50px;
   color: #194776;
   font-weight: 600;
   font-size: 40px;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 20%;
-  text-align: center;
+.mission {
+  height: 12.5vh;
 }
 
-.footer-content {
-  height: 65%;
-  font-size: 30px;
+.mission-content {
+  height: 65vh;
   width: 60%;
   color: #194776;
   text-align: left;
   margin: auto;
 }
 
-.footer-end {
-  height: 35%;
+.footer {
+  height: 7.5vh;
   background-color: #194776;
   display: flex;
   justify-content: center;
 }
 
 .mission-title {
-  padding-top: 20px;
+  padding-top: 8px;
   color: #194776;
   font-weight: 1000;
   font-size: 35px;
 }
 
-.mission-content {
+.mission-info {
   font-style: italic;
 }
 
